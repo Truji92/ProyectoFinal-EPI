@@ -1,0 +1,50 @@
+\documentclass[11pt]{report}
+
+\usepackage{vmargin}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\usepackage{fancyhdr}
+
+\addto\captionsspanish{\renewcommand{\chaptername}{Sección}}
+
+%\includeonly{Memoria}
+
+
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{4}
+
+
+\title{\textbf{Titulo}}
+\author{César Antonio Enrique Ramírez}
+\date{\today}
+
+%//////////////// Documento //////////////////////%
+\usepackage{graphicx}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\thispagestyle{empty}
+\null
+\vfill
+\begin{center}
+	Esta página fue dejada en blaco a propósito.
+\end{center}
+\newpage
+
+\input{INTRODUCCION}
+\input{MEMORIA}
+\input{PLANOS}
+\input{PDECONDICIONES}
+\input{PRESUPUESTO}
+
+
+\end{document}
