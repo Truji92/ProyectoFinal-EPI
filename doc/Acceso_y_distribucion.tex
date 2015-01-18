@@ -1,13 +1,254 @@
 \subsection{Acceso y distribución de los servicios de telecomunicaciones de telefonía disponible al público (STDP) y de banda ancha (TBA).}
 \subsubsection{Redes de Distribución y Dispersión.}
-\paragraph{Redes de cables de pares o pares trenzados.}
+Este capítulo tiene por objeto describir y detallar las características de la red que permitan el
+acceso y la distribución de los servicios de telecomunicaciones de telefonía disponible al público y
+de banda ancha.
+Según se establece en el artículo 9 del Real Decreto 346/2011 en este proyecto se describirán y
+proyectarán la totalidad de las redes que pueden formar parte de la ICT, de acuerdo a la
+presencia de operadores que despliegan red en la ubicación de la futura edificación.
+La instalación de la red será con Cables de Pares Trenzados y coaxiales.
+\paragraph{Redes de cables de pares o pares trenzados.}\textbf{}\\
+Los cables de pares trenzados se utilizan en la red de distribución y
+dispersión y en la red interior de usuario.
+Para las redes de distribución y dispersión, los cables de pares trenzados
+utilizados serán, como mínimo, de 4 pares de hilos conductores de cobre con
+aislamiento individual sin apantallar clase E (categoría 6), deberán cumplir las
+especificaciones de la norma UNE-EN 50288-6-1 (Cables metálicos con
+elementos múltiples utilizados para la transmisión y el control de señales
+analógicas y digitales. Parte Especificación intermedia para cables sin
+apantallar aplicables hasta 250 MHz. Cables para instalaciones horizontales y
+verticales en edificios).
+
+Para la red interior de usuario, los cables utilizados serán como mínimo de
+cuatro pares de hilos conductores de cobre con aislamiento individual clase E
+(categoría 6) y cubierta de material no propagador de la llama, libre de
+halógenos y baja emisión de humos, y deberán ser conformes a las
+especificaciones de la norma UNE-EN 50288-6-1 (Cables metálicos con
+elementos múltiples utilizados para la transmisión y el control de señales
+analógicas y digitales. 
 \subparagraph{Establecimiento de la topología de la red de cables de pares.}
-\subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables de pares y tipos de cables.}
+
+\begin{itemize}
+	\item \textbf{Red de alimentación}\\
+	Los Operadores de los servicios de telecomunicaciones de telefonía disponible al público y de
+	banda ancha, accederán al edificio a través de sus redes de alimentación, que pueden ser
+	mediante cables o vía radio. En cualquier caso, accederán al Recinto de Instalaciones de
+	Telecomunicación correspondiente y terminarán en unas regletas de conexión (Regletas de
+	Entrada) situadas en el Registro Principal de cables de Pares situadas en el RITU.
+	Hasta este punto es responsabilidad de cada operador el diseño, dimensionamiento e instalación
+	de la red de alimentación. El acceso de la misma hasta el RITU se realizará a través de la arqueta
+	de entrada, canalización externa y canalización de enlace.
+	En el Registro Principal, se colocarán también las regletas o paneles de conexión desde las
+	cuales partirán los cables que se distribuyen hasta cada usuario, además dispone de espacio
+	suficiente para alojar las guías y soportes necesarios para el encaminamiento de cables y puentes
+	así como para los paneles o regletas de entrada de los operadores.
+	En el RITU también se establece una previsión de espacio para la eventual instalación de los equipos de
+	recepción y procesado de la señal en el caso en que los operadores accedan vía radio.
+	
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Red interior del edificio}\\
+\textbf{Opción con Cable de Pares Trenzados}\\
+Con el diseño del tendido de la red de distribución/dispersión de cables de pares trenzados
+previsto en el presente proyecto, no se supera, en ningún caso, la longitud de 100 m entre el
+registro principal y cualquiera de los PAU (según se puede comprobar en el correspondiente
+esquema incluido en el apartado de Planos), por lo que se realizan las citadas redes mediante
+cables de pares trenzados, de acuerdo a lo establecido en el apartado 3.1.1 del Anexo II del
+Reglamento.\\
+La red interior del edificio se compone de:\\
+- Red de distribución/dispersión\\
+- Red interior de usuario\\
+La red total se refleja en el esquema (INCLUIR ESQUEMA)\\
+Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
+siguientes:\\
+- Punto de Interconexión (entre la red de alimentación y la red de distribución/dispersión)\\
+- Punto de distribución (entre la red de distribución y la red de dispersión). En este caso no tiene implementación física en los registros secundarios ya que al ser la red de cables de pares trenzados en estrella, se dispondrá de un cable sin solución de continuidad desde el Registro Principal hasta cada PAU. El punto de distribución y de interconexión, coinciden en el Registro Principal.\\
+- Punto de acceso de usuario (entre la red de dispersión y la red interior de usuario)\\
+
+\textbf{Opción con Cable de pares}\\
+En esta otra opción se realiza las redes de distribución y dispersión mediante cables de pares.\\
+La red interior del edificio se compone de:\\
+- Red de distribución\\
+- Red de dispersión\\
+- Red interior de usuario\\
+La red total se refleja en el esquema (INCLUIR ESQUEMA)\\
+Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
+siguientes:\\
+- Punto de Interconexión (entre la red de alimentación y la red de distribución)\\
+- Punto de distribución (entre la red de distribución y la red de dispersión)\\
+- Punto de acceso de usuario (entre la red de dispersión y la red interior de usuario)\\
+
+\end{itemize}
+
+\subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables de pares y tipos de cables.}\textbf{}\\
+El conjunto de 10 viviendas unifamiliares y el local comercial, objeto del presente
+proyecto, tiene la siguiente distribución:\\
+Planta baja:		2 estancias\\
+Primera planta: 	5 estancias\\
+Un local sin distribución interior en estancias.\\
+No existe previsión de conjunto de oficinas.
+\begin{itemize}
+	\item \textbf{Opción con Cable de Pares Trenzados}\\
+	El número de acometidas necesarias, cada una formada por un cable no apantallado de 4 pares trenzados de cobre de Categoría 6 Clase E es de:\\
+	\begin{table}[H]
+\centering
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\hline
+""&NÚMERO DE PAU&NÚMERO DE CABLES DE 4 PARES TRENZADOS \\
+\hline \hline
+VIVIENDAS&10&10\\
+\hline
+LOCALES COMERCIALES&1&1\\
+\hline
+CABLES PREVISTOS&""&11\\
+\hline
+COEFICIENTE CORRECTOR&""&1.2\\
+\hline
+CONEXIONES NECESARIAS&""&13.2->14\\
+\hline
+CONEXIONES PREVISTAS&""&24
+\end{tabular}
+
+\caption{Cálculo nº acometidas}
+\label{tabla:autores}
+\end{table}
+
+El número de cables necesarios es de 14 y corresponde a viviendas y locales de utilización permanente con una ocupación aproximada de la red del 80%.\\
+No obstante y con la finalidad de que en cada vivienda exista al menos un cable de reserva para
+posibles roturas o averías, se ha previsto instalar 24 cables.\\
+Dado que la red de cables de pares trenzados es en estrella, los cables de esta red se tienden
+directamente desde el punto de interconexión hasta el PAU de cada vivienda o local (11 en total,
+uno para cada vivienda y local), y los 13 restantes quedarán finalizados uno en cada uno de los
+registros secundarios de cada vivienda con holgura suficiente para llegar al RTR de la primera planta.\\
+Así, la red de distribución y dispersión estará formada por 24 cables UTP de cobre de 4 pares categoría 6 Clase E.
+
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Opción con Cable de Pares}\\
+	Número de pares necesarios:\\
+	\begin{table}[H]
+\centering
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\hline
+""&NÚMERO DE PAU&PARES \\
+\hline \hline
+VIVIENDAS&10&20\\
+\hline
+LOCALES COMERCIALES&1&2\\
+\hline
+CABLES PREVISTOS&""&22\\
+\hline
+COEFICIENTE CORRECTOR&""&1.2\\
+\hline
+PARES NECESARIOS&""&26.4->27
+\end{tabular}
+\caption{Cálculo nº acometidas}
+\label{tabla:autores}
+\end{table}
+
+El número de pares necesarios es de 27 y corresponde a viviendas de utilización permanente con un coeficiente de 2 líneas por vivienda, 2 líneas por local comercial y una ocupación aproximada de la red del 80%.\\
+Siendo 28 el número de pares necesarios, la red de distribución estará formada por el cable normalizado inmediato superior, de 50 pares.
+Si el número de pares es menor a 30, la instalación se puede hacer en estrella con cables de 1 o 2 pares desde el registro principal.
+\end{itemize}
+
 \subparagraph{Estructura de distribución y conexión.}
+\begin{itemize}
+	\item \textbf{Opción con Cable de Pares Trenzados}\\
+	Al local comercial llegan 2 cables de pares trenzados, quedando uno de reserva en el registro
+secundario.\\
+A cada vivienda llegarán 2 cables, quedando uno de reserva.\\
+Estos cables se conectarán, en su extremo inferior, a los conectores RJ45 hembra del panel de
+conexión situado en el Registro Principal de cables de Pares, instalado en el RITU, y en su
+extremo superior finalizarán en la roseta (conector hembra RJ45) de cada vivienda y local salvo
+los de reserva que quedarán almacenados en el registro secundario de la cada vivienda.\\
+Los cables deberán estar etiquetados en ambos extremos, indicando en cada uno de ellos la
+vivienda a la que se corresponde, incluidos los de reserva.
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Opción con Cable de Pares}\\
+	En total tenemos 22 pares, 2 para el local comercial y los otros 20 restantes para las viviendas unifamiliares.\\
+	El local comercial se dotará de 2 pares con la intención de destinar un par a modo de reserva.\\
+	Las viviendas unifamiliares se dotarán de 20 pares.\\
+	Este cable se conectará, en su extremo inferior, a las regletas de conexión situadas en el Registro
+Principal, instalado en el RITU.\\
+La numeración de los pares se realizará siguiendo el código de colores quedando como sigue la
+distribución y el marcado correspondiente, en el punto de interconexión.\\
+\end{itemize}
+
 \subparagraph{Resumen de los materiales necesarios para la red de cables de pares.}
+Las características de los todos materiales utilizados se indican en el Pliego de Condiciones.
+\begin{itemize}
+	\item \textbf{Cables}\\
+	\textbf{Opción con Cables de Pares Trenzados}\\
+	HAY QUE AÑADIR METROS DE CABLE\\
+	\textbf{Opción con Cables de Pares}\\
+	HAY QUE AÑADIR METROS DE CABLE
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Regletas o paneles de salida del Punto de Interconexión}\\
+	\textbf{Opción con Cables de Pares Trenzados}\\
+	HAY QUE AÑADIR METROS DE CABLE\\
+	\textbf{Opción con Cables de Pares}\\
+	HAY QUE AÑADIR METROS DE CABLE
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Regletas de los Puntos de Distribución}\\
+	\textbf{Opción con Cables de Pares Trenzados}\\
+	HAY QUE AÑADIR METROS DE CABLE\\
+	\textbf{Opción con Cables de Pares}\\
+	HAY QUE AÑADIR METROS DE CABLE
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Conectores}\\
+	\textbf{Opción con Cables de Pares Trenzados}\\
+	HAY QUE AÑADIR METROS DE CABLE\\
+	\textbf{Opción con Cables de Pares}\\
+	HAY QUE AÑADIR METROS DE CABLE
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Puntos de Acceso al Usuario (PAU)}\\
+	\textbf{Opción con Cables de Pares Trenzados}\\
+	HAY QUE AÑADIR METROS DE CABLE\\
+	\textbf{Opción con Cables de Pares}\\
+	HAY QUE AÑADIR METROS DE CABLE
+\end{itemize}
 \paragraph{Redes de cables coaxiales.}
 \subparagraph{Establecimiento de la topología de la red de cables coaxiales.}
+\begin{itemize}
+	\item \textbf{Red de alimentación}\\
+	Los Operadores de los servicios de telecomunicaciones de cable coaxial para servicios de banda
+ancha, accederán a las viviendas a través de sus redes de alimentación. En cualquier caso, accederán
+al Recinto de Instalaciones de Telecomunicación correspondiente y terminarán sus redes en unos
+paneles de conexión o regletas de entrada situadas en el Registro Principal de Cables Coaxiales
+situados en el RITU. Estos paneles de conexión estarán constituidos por derivadores o
+repartidores terminados en conectores tipo F hembra.
+Hasta este punto es responsabilidad de cada operador el diseño, dimensionamiento e instalación
+de la red de alimentación. El acceso de la misma hasta el RITU se realizará a través de la arqueta
+de entrada, canalización externa y canalización de enlace.
+Del Registro Principal de Cables Coaxiales, partirán los propios cables de la red de distribución
+de la edificación terminados con conectores tipo F macho, dotados con la coca suficiente como
+para permitir posibles reconfiguraciones.
+En el RITU se deberá hacer una previsión de espacio para el caso de que sea necesaria
+amplificación, cuando el operador accede mediante cable.
+En el RITU se establece una previsión de espacio para la eventual instalación de los equipos de
+recepción y procesado de la señal en el caso en que los operadores accedan vía radio.
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Red interior del edificio}\\
+Al tratarse de una infraestructura con menos de 20 PAUs, la configuración de la red debe seguir una topología en estrella.\\
+Al no haber una distancia mayor de 100m entre RITU y PAU más alejado tenemos una pérdida menor a 20dB.\\
+Todos los cables salen del registro principal.
+En el PAU se incluirá un distribuidor inductivo de 2 salidas F simétricas.
+\end{itemize}
 \subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables coaxiales y tipos de cables.}
+
 \subparagraph{Estructura de distribución y conexión.}
 \subparagraph{Resumen de los materiales necesarios para la red de cables coaxiales.}
 \paragraph{Redes de cables de fibra óptica.}
