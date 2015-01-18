@@ -6,6 +6,7 @@
 \usepackage{times}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{float}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \usepackage{fancyhdr}
@@ -15,6 +16,17 @@
 \marginsize{3cm}{2cm}{2cm}{2cm}
 
 \addto\captionsspanish{\renewcommand{\chaptername}{Sección}}
+
+% para los itemize anidados
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
+
+% para los enum anidados
+\renewcommand{\labelenumi}{\arabic{enumi}. }
+\renewcommand{\labelenumii}{\labelenumi\alph{enumii}) }
+\renewcommand{\labelenumiii}{\labelenumii\roman{enumiii}: }
 
 %\includeonly{Memoria}
 
