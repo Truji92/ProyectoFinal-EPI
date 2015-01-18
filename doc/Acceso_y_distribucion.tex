@@ -246,24 +246,186 @@ Al tratarse de una infraestructura con menos de 20 PAUs, la configuración de la
 Al no haber una distancia mayor de 100m entre RITU y PAU más alejado tenemos una pérdida menor a 20dB.\\
 Todos los cables salen del registro principal.
 En el PAU se incluirá un distribuidor inductivo de 2 salidas F simétricas.
+Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
+siguientes:\\
+- Punto de Interconexión (entre la red de alimentación y la red de distribución).\\
+- Punto de distribución (entre la red de distribución y la red de dispersión). En este caso no tiene
+implementación física en los registros secundarios ya que al ser la red de cable coaxial en
+estrella, se dispondrá de un cable sin solución de continuidad desde el Registro Principal hasta
+cada PAU. El punto de distribución y de interconexión, coinciden en el Registro Principal.\\
+- Punto de acceso de usuario (entre la red de dispersión y la red interior de usuario).\\
 \end{itemize}
 \subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables coaxiales y tipos de cables.}
-
+La urbanización de 10 viviendas unifamiliares y un local comercial, objeto del presente proyecto, tiene la siguiente distribución:\\
+Planta baja y Primera planta:			Dos plantas por vivienda\\
+Planta baja:							Local comercial\\
+El número de acometidas necesarias, constituida cada una por un cable coaxial del tipo RG 59 es de:
+\begin{table}[H]
+\centering
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\hline
+""&NÚMERO DE PAU&NÚMERO DE CABLES COAXIALES \\
+\hline \hline
+VIVIENDAS&10&10\\
+\hline
+LOCALES COMERCIALES&1&1\\
+\hline
+CABLES PREVISTOS&""&11\\
+\hline
+CONEXIONES NECESARIAS&""&11\\
+\end{tabular}
+\caption{Cálculo nº acometidas coaxiales}
+\label{tabla:autores}
+\end{table}
+No se instalan cables de reserva.\\
+Por tanto la red de distribución-dispersión estará formada por 11 cables coaxiales del tipo RG 59.
 \subparagraph{Estructura de distribución y conexión.}
+Seguirá una topología en estrella con un número de 11 tomas, 10 para viviendas y una para el local comercial.\\
+Las conectores macho tipo “F” serán los empleados.
 \subparagraph{Resumen de los materiales necesarios para la red de cables coaxiales.}
+Definido en el Apartado Pliego de Condiciones.
 \paragraph{Redes de cables de fibra óptica.}
 \subparagraph{Establecimiento de la topología de la red de cables de fibra óptica.}
+\begin{itemize}
+	\item \textbf{Red de Alimentación}\\
+	Los Operadores de los servicios de telecomunicaciones de cable de fibra óptica para servicios de
+banda ancha, accederán al edificio a través de sus redes de alimentación. En cualquier caso,
+accederán al Recinto de Instalaciones de Telecomunicación correspondiente y terminarán sus
+redes en unos paneles de conectores de entrada situados en el Registro Principal de Cables de
+Fibra Óptica situados en el RITU.
+Hasta este punto es responsabilidad de cada operador el diseño, dimensionamiento e instalación
+de la red de alimentación. El acceso de la misma hasta el RITU se realizará a través de la arqueta
+de entrada, canalización externa y canalización de enlace.
+Del Registro Principal de Cable de Fibra Óptica, partirán los propios cables de la red de
+distribución de la edificación terminados con conectores tipo SC/APC, dotados con la coca
+suficiente como para permitir posibles reconfiguraciones.
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{Red interior del edificio}\\
+Al tratarse de una edificación con menos de 15 PAUs, la red de distribución y dispersión se hará
+en estrella desde el Registro Principal.\\
+Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
+siguientes:\\
+- Punto de Interconexión (entre la red de alimentación y la red de distribución).\\
+- Punto de distribución (entre la red de distribución y la red de dispersión). En este caso no tiene
+implementación física en los registros secundarios ya que al ser la red de cable de fibra óptica en
+estrella, se dispondrá de un cable de dos fibras ópticas sin solución de continuidad desde el
+Registro Principal de Cable de Fibra Óptica hasta cada PAU. El punto de distribución y de
+interconexión, coinciden en el Registro Principal de Cable de Fibra Óptica.\\
+- Punto de acceso de usuario.\\
+\end{itemize}
 \subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables de fibra óptica y tipos de cables.}
+La urbanización de 10 viviendas unifamiliares y un local comercial, objeto del presente proyecto, tiene la siguiente distribución:\\
+Planta baja y Primera planta:			Dos plantas por vivienda\\
+Planta baja:							Local comercial\\
+El número de acometidas necesarias, constituida cada una por un cable de dos fibras ópticas es de:
+\begin{table}[H]
+\centering
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\hline
+""&NÚMERO DE PAU&NÚMERO DE CABLES COAXIALES \\
+\hline \hline
+VIVIENDAS&10&10\\
+\hline
+LOCALES COMERCIALES&1&1\\
+\hline
+ACOMETIDAS PREVISTAS&""&11\\
+\hline
+COEFICIENTE CORRECTOR&""&1.2\\
+\hline
+ACOMETIDAS NECESARIAS&""&13.2->14\\
+\end{tabular}
+\caption{Cálculo nº acometidas de fibra óptica}
+\label{tabla:autores}
+\end{table}
+No se emplearán acometidas de reserva de fibra óptica.
 \subparagraph{Estructura de distribución y conexión.}
+La red de Fibra Óptica se extiende desde el punto de interconexión en el registro principal (RITU) hasta el PAU.\\
+La Fibra Óptica no llega al interior de la vivienda, termina en el PAU.\\
+Al tener un número de PAUs menor a 15 la instalación se puede hacer en estrella, con  mangueras independientes  cada una compuesta por 2 F.O desde el registro principal hasta los PAUs ópticos dentro del RTR, dejando la previsión en el interior de la caja de segregación en el RS, con una distancia igual a la distancia del RTR más lejano en cada planta.\\
 \subparagraph{Resumen de los materiales necesarios para la red de cables de fibra óptica.}
+Utilizaremos conectores SC/APC en toda la red.\\
+En los \textbf{PD} se utilizarán cajas de segregación (de 4 a 8 F.O) con espacio suficiente para los bucles de Fibra Óptica de reserva:\\ 
+La cifra de cables de F.O prevista se multiplicará por 1,2 (F.O de reserva).\\
+En el \textbf{PAU} se instalará:\\
+	- Una roseta con conectores ópticos SC/APC, tantos como acometidas de la red de dispersión(mínimo 2 conectores ópticos).\\
+	- La Unidad de Terminación de Red Óptica hace las veces de "Medio de corte" y "Punto de prueba".\\
 \subsubsection{Redes Interiores de Usuario.}
 \paragraph{Red de cables de pares trenzados.}
 \subparagraph{Cálculo y dimensionamiento de la red interior de usuario de pares trenzados.}
+En la tabla que se incluye a continuación se indica el número de estancias que tiene cada
+vivienda y cada local, así como el número total de tomas.
+\begin{table}[H]
+\centering
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\hline
+""&NÚMERO DE ESTANCIAS&NÚMERO DE TOMAS\\
+\hline \hline
+Planta Baja&2&4\\
+\hline
+Primera Planta&5&6\\
+\end{tabular}
+\caption{Cálculo nº tomas}
+\label{tabla:autores}
+\end{table}
+Total de tomas necesarias en viviendas: 100\\
+Según lo establecido en el apartado 3.5.1 del Anexo II del Reglamento de ICT, en los locales, al
+no estar definida la distribución en planta, no se instalarán tomas, siendo responsabilidad de la
+propiedad el diseño y dimensionamiento, así como la realización futura de la red interior de
+usuario, cuando se ejecute el proyecto de distribución en estancias.
 \subparagraph{Número y distribución de las Bases de Acceso Terminal.}
+En viviendas se instalará una BAT o toma en cada estancia, exceptuando baños y trasteros.
+Además, en dos de las estancias, salón-comedor y oficina, se instalará otra BAT adicional
+quedando instaladas ambas de la misma estancia en el mismo registro de toma.
+En el local, como se ha indicado anteriormente, no se instalarán tomas.
+El número de tomas por tanto será de 18 en cada vivienda, no instalándose ninguna en los locales,
+ni existiendo estancias comunes en la edificación, haciendo un total de 180 tomas.
 \subparagraph{Tipos de cables.}
+Se utilizarán cables trenzados de 4 pares de hilos conductores del tipo UTP categoría 6 Clase E,
+uno desde el RTR hasta cada BAT en estrella.
+Deberán cumplir las especificaciones indicadas en el Pliego de
+Condiciones.
 \subparagraph{Resumen de los materiales necesarios para la red interior de usuario de cables de pares trenzados.}
+Las características de todos los materiales utilizados se indican en el Pliego de Condiciones.
+\begin{itemize}
+	\item \textbf{Cables}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Conectores}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
+\begin{itemize}
+	\item \textbf{BATs}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
 \paragraph{Red de cables coaxiales.}
 \subparagraph{Cálculo y dimensionamiento de la red interior de usuario de cables coaxiales.}
+La red interior de usuario se configurará en topología estrella con un cable coaxial del tipo RG 59 desde el
+Registro de Terminación de Red hasta cada una de las dos tomas que se instalarán en cada
+vivienda.\\
+Total de tomas necesarias en viviendas: 70
+Según lo dispuesto en el apartado 3.5.2 del Anexo II del Reglamento de ICT, en locales, al no
+estar definida su distribución en planta, no se instalará red interior de usuario siendo
+responsabilidad de la propiedad del local su diseño y dimensionamiento, así como su realización
+cuando se ejecute el proyecto de distribución en estancias.
 \subparagraph{Número y distribución de las Bases de Acceso Terminal.}
+En los locales no se instalarán tomas.
+Se instalará un total de 70 tomas en la edificación.
 \subparagraph{Tipos de cables.}
+Se utilizará cable del tipo RG 59 de 6.5 mm de diámetro.
 \subparagraph{Resumen de los materiales necesarios para la red interior de usuario de cables coaxiales.}
+Las características de todos los materiales utilizados se indican en el Pliego de Condiciones.
+\begin{itemize}
+	\item \textbf{Cables}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Conectores}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
+\begin{itemize}
+	\item \textbf{BATs}
+	DEFINIR TAMAÑO CABLES
+\end{itemize}
