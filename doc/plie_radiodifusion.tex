@@ -1,14 +1,214 @@
 \subsection{Radiodifusión sonora y televisión.}
+
+Ya se ha comentado en la Memoria de este Proyecto que éste afecta a los sistemas de telecomunicación y las redes que permiten la correcta distribución de las señales hasta las viviendas o locales del inmueble.
+La captación y adaptación de señales de Radiodifusión sonora y TV por satélite no son objeto de este Proyecto. Sí lo es su distribución.
+Se ha diseñado la Red de Distribución teniendo en cuenta los requisitos técnicos establecidos en el Reglamento de ICT para que estas señales puedan ser recibidas correctamente.
+
 \subsubsection{Condicionantes de acceso a los sistemas de captación.}
+
+No se instalará ningún acceso al tejado del RITU para instalación y posterior mantenimento de los elementos de captación de señales RTV ya que dadas las caractiristicas y tamaño del mismo este acceso puede realizarse mediante una escalera móvil.
+
 \subsubsection{Características de los sistemas de captación.}
+
+El conjunto para la captación de servicios de televisión terrestre, estará compuesto por las antenas, torreta, mástil, y demás sistemas de sujeción de antena necesarios para la recepción de las señales de radiodifusión sonora y de televisión terrestres difundidas por entidades con título habilitante, indicadas anteriormente en la memoria.
+
 \paragraph{Antenas.}
+
+Las características de las antenas serán al menos las siguientes:
+
+\subparagraph*{FM: }
+Tipo omnidireccional.
+
+ROE < 2 
+
+Carga al viento (150 Km/h) < 40 Newtons
+
+\subparagraph*{VHF (DAB): }
+Antena para los canales 8 a 11 de las siguientes características:
+
+\begin{table}[H]
+\caption{Características antena VHF}
+\centering
+\label{antvhf}
+\begin{tabular}{l l}
+    Tipo & Directiva\\
+    \hline
+    \hline
+    Ganancia & > 8 dB\\
+    ROE &  < 2 \\
+    Relación D/A & > 15 dB \\
+    Carga al viento (150 km/h) & < 60 Newtons
+\end{tabular}
+\end{table}
+
+\subparagraph*{UHF: }
+
+Antena para los canales 21 al 69 (UHF) de las siguientes características: 
+
+\begin{table}[H]
+\caption{Características antena UHF}
+\centering
+\label{antuhf}
+\begin{tabular}{l l}
+    Tipo & Directiva\\
+    \hline
+    \hline
+    Ganancia & > 12 dB\\
+    Ángulo de apertura horizontal & < 40º\\
+    Ángulo de apertura vertical & < 50º\\
+    ROE &  < 2 \\
+    Relación D/A & > 25 dB \\
+    Carga al viento (150 km/h) & < 100 Newtons
+\end{tabular}
+\end{table}
+
+Las antenas deberán ser de materiales resistentes a la corrosión o tratados convenientemente.
+
 \paragraph{Elementos de sujeción de las antenas para televisión terrestre.}
+
+En este caso se utilizará un conjunto torreta-mástil para el soporte de estas antenas.
+
+La torreta, de base triangular, equilátera, de 18 cm de lado, estará construida con 3 tubos de acero de 20 mm de diámetroy 2 mm de espesor de pared, unidos por varillas de acero de 6 mm de diámetro, y su placa base con tres pernos de sujeción, se anclará en una zapata de hormigón que formará cuerpo único con la cubierta del RITU.
+
+Se utilizará un mástil para la colocación de las antenas, que será un tubo de hierro galvanizado, perfil tipo redondo de 40 mm de diámetro y 2 mm de espesor.
+
+Sobre este mástil se situarán, únicamente, las antenas aquí especificadas y no podrá colocarse sobre el conjunto torreta-mástil ningún otro elemento mecánico sin la autorización previa de un proyectista o del Director de Obra de ICT, caso en que este existiese.
+
+---------------------------Para otros detalles sobre la fijación de la torreta y el mástil así como de sus conexiones véase el punto 3.1.H.a.1) de este pliego de condiciones.----------------------------------
+
+Los mástiles, tubos de mástiles y los elementos anexos: soportes, anclajes, etc. deberán ser de materiales resistentes a la corrosión o tratados convenientemente a estos efectos y, deberán impedir, o al menos dificultar la entrada de agua en ellos y, en todo caso, deberán garantizar la evacuación de la que se pudiera recoger.
+
 \paragraph{Elementos de sujeción de las antenas para televisión por satélite}
+
+Para la sujeción de las antenas se construirá una zapata de hormigón, que formará cuerpo único con el RITU, y sobre la que se instalarán dos placas base de anclaje, de forma cuadrada de 25 cm de lado, cada una mediante 4 pernos de sujeción a la zapata, de 16 mm. de diámetro. La distancia entre la ubicación de ambas placas base será de 1,5 m., mínimo, para permitir la orientación de las antenas. El punto exacto de su ubicación será objeto de la dirección de obra para evitar que se puedan producir sombras electromagnéticas entre los distintos sistemas de captación.
+
+Las dimensiones y composición de la zapata de hormigón serán definidas por el arquitecto, teniendo en cuenta los esfuerzos y momentos máximos, calculados según el Documento Básico SE-AE del Código Técnico de la Edificación.
+
 \subsubsection{Características de los elementos activos.}
+
+Los equipos amplificadores para la radiodifusión sonora y televisión terrestres serán monocanales y de grupo, todos ellos con separación de entrada en Z y mezcla de salida en Z, serán de ganancia variable y tendrán las siguientes características:
+
+\begin{table}[H]
+\caption{Caracteríticas de amplificadores}
+\centering
+\label{amplis}
+\begin{tabular}{l l l l l}
+    Tipo & FM & UHF Monocanal digital & UHF de grupo & VHF de grupo\\
+\hline
+\hline
+    Banda Cubierta & 88-108 Mhz & 1 canal UHF digital & C67-69 UHF digital & C8-11\\
+    Nivel de salida máximo & >120 dB$\mu$V & >110dB$\mu$V (*) & >110dB$\mu$V (*)& >100dB$\mu$V (*)\\
+    Ganancia Mínima & 55 dB & 55 dB & 55 dB & 55 dB \\
+    Margen de regulación de la ganancia & >20 dB & >20 dB & >20 dB & >20 dB\\
+    Figura de ruido máxima & 9 dB & 9 dB & 9 dB & 9 dB\\
+    Pérdidas de retorno en las puertas & >10 dB & >10 dB & >10 dB & >10 dB\\
+    Rechazo a los canales +/- 1 & ---- & ---- & ---- & ---- \\
+    Rechazo a los canales +/- 2 & ---- & >25 dB & >25 dB & >25 dB \\
+    Rechazo a los canales +/- 3 & ---- & >50 dB & >50 dB & >50 dB \\
+    
+\end{tabular}
+\end{table}
+
+(*) Para una relación S/I>35 dB en la prueba de intermodulación de tercer orden con dos tonos.
+
 \subsubsection{Características de los elementos pasivos.}
 \paragraph{Mezclador.}
+
+Los mezcladores intercalados para permitir la mezcla de la señal de la cabecera terrestre con la de satélite, tendrán las siguientes características:
+
+\begin{table}[H]
+\caption{Características del mezclador}
+\centering
+\label{mezclador}
+\begin{tabular}{l l}
+    Tipo & 1\\
+\hline
+\hline
+    Banda cubierta  & 5 – 2.150 MHz \\
+    Pérdidas inserción máximas V/U & 4 +/- 0.5 dB\\
+    Pérdidas inserción máximas FI & 4 +/- 0.5 dB\\
+    Impedancia & 75 $\Omega$\\
+    Rechazo entre entradas & >20 dB\\
+    Pérdidas de retorno en las puertas & >10 dB
+\end{tabular}
+\end{table}
+
 \paragraph{Derivadores.}
+
+\begin{table}[H]
+\caption{Características de derivadores}
+\centering
+\label{derivadores}
+\begin{tabular}{l l l l}
+    Tipo & A & B & C\\
+\hline
+\hline
+    Banda cubierta  & 5 – 2.150 MHz & 5 – 2.150 MHz & 5 – 2.150 MHz \\
+    Nº de salidas & 2 & 2 & 2\\
+    Pérdidas de deriv. típicas V/U & 12 +/- 0.5 dB & 16 +/- 0.5 dB & 20 +/- 0.5 dB\\
+    Pérdidas de deriv. típicas FI & 12 +/- 0.5 dB & 16 +/- 0.5 dB & 20 +/- 0.5 dB\\
+    Pérdidas de inserc. típicas V/U & 2 +/- 0.25 dB & 1.6 +/- 0.25 dB & 1 +/- 0.25 dB\\
+    Pérdidas de inserc. típicas V/U & 3.5 +/- 0.25 dB & 2 +/- 0.25 dB & 2 +/- 0.25 dB\\
+    Desacoplo derivación-entrada & 26 dB & 30 dB & 35 db\\
+    Aislamiento entre derivaciones & & &\\
+    40-300 MHz & 38 dB & 38 dB & 38 dB\\
+    300-950 MHz & 30 dB & 30 dB & 30 dB\\
+    950-2150 MHZ & 20 dB & 20 dB & 20 dB\\
+    Impedancia & 75 $\Omega$ & 75 $\Omega$ & 75 $\Omega$\\
+    Pérdidas de retorno en las puertas & >10 dB & >10 dB & >10 dB
+\end{tabular}
+\end{table}
+
 \paragraph{Distribuidores.}
+
+\begin{table}[H]
+\caption{Características de los distribuidores}
+\centering
+\label{distribuidores}
+\begin{tabular}{l l l}
+    Tipo & 1 & 2\\
+\hline
+\hline
+    Banda cubierta  & 5 – 2.150 MHz & 5 – 2.150 MHz \\
+    Nº de salidas & 2 & 5??????\\ 
+    Pérdidas de distribución típicas V/U & 5 +/- 0.25 dB & 10 +/- 0.25 dB\\
+    Pérdidas de distribución típicas FI & 5 +/- 0.25 dB & 11 +/- 0.25 dB\\
+    Desacoplo entrada-salida & >15 dB & >15 dB\\
+    Impedancia & 75 $\Omega$ & 75 $\Omega$\\
+\end{tabular}
+\end{table}
+
 \paragraph{Cables.}
+
+El cable utilizado deberá cumplir lo dispuesto en las normas UNE-EN 50117-2-4 para instalaciones interiores.
+
+Se utilizará un cable de 7 mm de diámetro exterior.
+
+La velocidad de propagación será mayor o igual a 0.7.
+
+Deberá tener una Impedancia característica media de 75 +/- 3 $\Omega$.
+
+El conductor central será de cobre y el dieléctrico de polietileno celular físico. 
+
+El cable coaxial utilizado deberá estar convenientemente apantallado mediante cinta metalizada y trenza de cobre o aluminio. 
+
+La cubierta del cable deberá ser no propagadora de la llama y de baja emisión y opacidad de humo.
+
 \paragraph{Punto de acceso al usuario.}
+
+Este elemento debe permitir la interconexión entre cualquiera de las dos terminaciones de la red de dispersión con cualquiera de las posibles terminaciones de la red interior del domicilio al usuario. Esta interconexión se llevará a cabo de una manera no rígida y fácilmente seccionable. El punto de acceso a usuario debe cumplir las características de transferencia que a continuación se indican:
+
+\begin{table}[H]
+\caption{Características de los puntos de Acceso al Usuario}
+\centering
+\label{caracPAUs}
+\begin{tabular}{l l l}
+    Parámetro & Unidad & Banda de Referencia\\
+\hline
+\hline
+    
+\end{tabular}
+\end{table}
+
+
 \paragraph{Bases de acceso de terminal.}
