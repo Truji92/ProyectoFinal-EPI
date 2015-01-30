@@ -74,8 +74,6 @@ Se utilizará un mástil para la colocación de las antenas, que será un tubo d
 
 Sobre este mástil se situarán, únicamente, las antenas aquí especificadas y no podrá colocarse sobre el conjunto torreta-mástil ningún otro elemento mecánico sin la autorización previa de un proyectista o del Director de Obra de ICT, caso en que este existiese.
 
----------------------------Para otros detalles sobre la fijación de la torreta y el mástil así como de sus conexiones véase el punto 3.1.H.a.1) de este pliego de condiciones.----------------------------------
-
 Los mástiles, tubos de mástiles y los elementos anexos: soportes, anclajes, etc. deberán ser de materiales resistentes a la corrosión o tratados convenientemente a estos efectos y, deberán impedir, o al menos dificultar la entrada de agua en ellos y, en todo caso, deberán garantizar la evacuación de la que se pudiera recoger.
 
 \paragraph{Elementos de sujeción de las antenas para televisión por satélite}
@@ -92,7 +90,7 @@ Los equipos amplificadores para la radiodifusión sonora y televisión terrestre
 \caption{Caracteríticas de amplificadores}
 \centering
 \label{amplis}
-\begin{tabular}{l l l l l}
+\begin{tabularx}{\textwidth}{Bssss}
     Tipo & FM & UHF Monocanal digital & UHF de grupo & VHF de grupo\\
 \hline
 \hline
@@ -106,7 +104,7 @@ Los equipos amplificadores para la radiodifusión sonora y televisión terrestre
     Rechazo a los canales +/- 2 & ---- & >25 dB & >25 dB & >25 dB \\
     Rechazo a los canales +/- 3 & ---- & >50 dB & >50 dB & >50 dB \\
     
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 (*) Para una relación S/I>35 dB en la prueba de intermodulación de tercer orden con dos tonos.
@@ -170,7 +168,7 @@ Los mezcladores intercalados para permitir la mezcla de la señal de la cabecera
 \hline
 \hline
     Banda cubierta  & 5 – 2.150 MHz & 5 – 2.150 MHz \\
-    Nº de salidas & 2 & 5??????\\ 
+    Nº de salidas & 2 & 5\\ 
     Pérdidas de distribución típicas V/U & 5 +/- 0.25 dB & 10 +/- 0.25 dB\\
     Pérdidas de distribución típicas FI & 5 +/- 0.25 dB & 11 +/- 0.25 dB\\
     Desacoplo entrada-salida & >15 dB & >15 dB\\
@@ -202,13 +200,38 @@ Este elemento debe permitir la interconexión entre cualquiera de las dos termin
 \caption{Características de los puntos de Acceso al Usuario}
 \centering
 \label{caracPAUs}
-\begin{tabular}{l l l}
-    Parámetro & Unidad & Banda de Referencia\\
-\hline
-\hline
-    
+\begin{tabular}{l l l l }
+    Parámetro & Unidad & Banda de Referencia & \\
+    \hline
+    \hline
+    & & 5-862 MHz & 950-2150 MHz \\
+    Impedancia & Ohmios & 75 & 75 \\
+    Pérdidas de inserción & dB & <1 & <1 \\
+    Pérdidas de retorno  & dB & $\geq 10$ & $\geq 10$ \\
+
 \end{tabular}
 \end{table}
 
 
 \paragraph{Bases de acceso de terminal.}
+
+\begin{table}[H]
+\caption{Características de las bases de acceso terminal.}
+\centering
+\label{caracBATs}
+\begin{tabular}{l l }
+    Tipo & 1\\
+    \hline \hline
+    Banda cubierta & 5 - 2150 MHz \\
+    Pérdidas de derivación V/U & 2 +/- 0.5 dB \\
+    Pérdidas de derivación FI & 3.5 +/- 0.5 dB \\
+    Impedancia & 75 $\Omega$ \\
+    Pérdidas de retorno & >10 dB \\
+\end{tabular}
+\end{table}
+
+Cualquiera que sea la marca de los materiales elegidos, las atenuaciones por ellos producidas en cualquier toma de usuario, no deberán superar los valores que se obtendrían si se utilizasen los indicados en éste y en anteriores apartados.
+
+El cumplimiento de estos niveles será objeto de la dirección de obra y su resultado se recogerá en
+el correspondiente cuadro de mediciones en la certificación final.
+
