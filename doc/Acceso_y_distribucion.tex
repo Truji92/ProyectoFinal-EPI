@@ -7,7 +7,7 @@ Según se establece en el artículo 9 del Real Decreto 346/2011 en este proyecto
 proyectarán la totalidad de las redes que pueden formar parte de la ICT, de acuerdo a la
 presencia de operadores que despliegan red en la ubicación de la futura edificación.
 La instalación de la red será con Cables de Pares Trenzados y coaxiales.
-\paragraph{Redes de cables de pares o pares trenzados.}\textbf{}\\
+\paragraph{Redes de cables de pares trenzados.}\textbf{}\\
 Los cables de pares trenzados se utilizan en la red de distribución y
 dispersión y en la red interior de usuario.
 Para las redes de distribución y dispersión, los cables de pares trenzados
@@ -59,29 +59,16 @@ Reglamento.\\
 La red interior del edificio se compone de:\\
 - Red de distribución/dispersión\\
 - Red interior de usuario\\
-La red total se refleja en el esquema (INCLUIR ESQUEMA)\\
+La red total se refleja en el esquema presente en la sección \textbf{PLANOS.}\\
 Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
 siguientes:\\
 - Punto de Interconexión (entre la red de alimentación y la red de distribución/dispersión)\\
 - Punto de distribución (entre la red de distribución y la red de dispersión). En este caso no tiene implementación física en los registros secundarios ya que al ser la red de cables de pares trenzados en estrella, se dispondrá de un cable sin solución de continuidad desde el Registro Principal hasta cada PAU. El punto de distribución y de interconexión, coinciden en el Registro Principal.\\
 - Punto de acceso de usuario (entre la red de dispersión y la red interior de usuario)\\
 
-\textbf{Opción con Cable de pares}\\
-En esta otra opción se realiza las redes de distribución y dispersión mediante cables de pares.\\
-La red interior del edificio se compone de:\\
-- Red de distribución\\
-- Red de dispersión\\
-- Red interior de usuario\\
-La red total se refleja en el esquema (INCLUIR ESQUEMA)\\
-Las diferentes redes que constituyen la red total del edificio se conexionan entre sí en los puntos
-siguientes:\\
-- Punto de Interconexión (entre la red de alimentación y la red de distribución)\\
-- Punto de distribución (entre la red de distribución y la red de dispersión)\\
-- Punto de acceso de usuario (entre la red de dispersión y la red interior de usuario)\\
-
 \end{itemize}
 
-\subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables de pares y tipos de cables.}\textbf{}\\
+\subparagraph{Cálculo y dimensionamiento de las redes de distribución y dispersión de cables de pares trenzados y tipos de cables.}\textbf{}\\
 El conjunto de 10 viviendas unifamiliares y el local comercial, objeto del presente
 proyecto, tiene la siguiente distribución:\\
 Planta baja:		2 estancias\\
@@ -107,7 +94,7 @@ COEFICIENTE CORRECTOR&""&1.2\\
 \hline
 CONEXIONES NECESARIAS&""&13.2->14\\
 \hline
-CONEXIONES PREVISTAS&""&24
+CONEXIONES PREVISTAS&""&14
 \end{tabular}
 
 \caption{Cálculo nº acometidas}
@@ -116,41 +103,13 @@ CONEXIONES PREVISTAS&""&24
 
 El número de cables necesarios es de 14 y corresponde a viviendas y locales de utilización permanente con una ocupación aproximada de la red del 80%.\\
 No obstante y con la finalidad de que en cada vivienda exista al menos un cable de reserva para
-posibles roturas o averías, se ha previsto instalar 24 cables.\\
+posibles roturas o averías, se ha previsto instalar 14 cables.\\
 Dado que la red de cables de pares trenzados es en estrella, los cables de esta red se tienden
 directamente desde el punto de interconexión hasta el PAU de cada vivienda o local (11 en total,
-uno para cada vivienda y local), y los 13 restantes quedarán finalizados uno en cada uno de los
+uno para cada vivienda y local), y los 3 restantes quedarán finalizados uno en cada uno de los
 registros secundarios de cada vivienda con holgura suficiente para llegar al RTR de la primera planta.\\
 Así, la red de distribución y dispersión estará formada por 24 cables UTP de cobre de 4 pares categoría 6 Clase E.
 
-\end{itemize}
-
-\begin{itemize}
-	\item \textbf{Opción con Cable de Pares}\\
-	Número de pares necesarios:\\
-	\begin{table}[H]
-\centering
-\begin{tabular}{p{5cm} p{5cm} p{5cm}}
-\hline
-""&NÚMERO DE PAU&PARES \\
-\hline \hline
-VIVIENDAS&10&20\\
-\hline
-LOCALES COMERCIALES&1&2\\
-\hline
-CABLES PREVISTOS&""&22\\
-\hline
-COEFICIENTE CORRECTOR&""&1.2\\
-\hline
-PARES NECESARIOS&""&26.4->27
-\end{tabular}
-\caption{Cálculo nº acometidas}
-\label{tabla:autores}
-\end{table}
-
-El número de pares necesarios es de 27 y corresponde a viviendas de utilización permanente con un coeficiente de 2 líneas por vivienda, 2 líneas por local comercial y una ocupación aproximada de la red del 80%.\\
-Siendo 28 el número de pares necesarios, la red de distribución estará formada por el cable normalizado inmediato superior, de 50 pares.
-Si el número de pares es menor a 30, la instalación se puede hacer en estrella con cables de 1 o 2 pares desde el registro principal.
 \end{itemize}
 
 \subparagraph{Estructura de distribución y conexión.}
@@ -167,58 +126,9 @@ Los cables deberán estar etiquetados en ambos extremos, indicando en cada uno d
 vivienda a la que se corresponde, incluidos los de reserva.
 \end{itemize}
 
-\begin{itemize}
-	\item \textbf{Opción con Cable de Pares}\\
-	En total tenemos 22 pares, 2 para el local comercial y los otros 20 restantes para las viviendas unifamiliares.\\
-	El local comercial se dotará de 2 pares con la intención de destinar un par a modo de reserva.\\
-	Las viviendas unifamiliares se dotarán de 20 pares.\\
-	Este cable se conectará, en su extremo inferior, a las regletas de conexión situadas en el Registro
-Principal, instalado en el RITU.\\
-La numeración de los pares se realizará siguiendo el código de colores quedando como sigue la
-distribución y el marcado correspondiente, en el punto de interconexión.\\
-\end{itemize}
-
 \subparagraph{Resumen de los materiales necesarios para la red de cables de pares.}
 Las características de los todos materiales utilizados se indican en el Pliego de Condiciones.
-\begin{itemize}
-	\item \textbf{Cables}\\
-	\textbf{Opción con Cables de Pares Trenzados}\\
-	HAY QUE AÑADIR METROS DE CABLE\\
-	\textbf{Opción con Cables de Pares}\\
-	HAY QUE AÑADIR METROS DE CABLE
-\end{itemize}
 
-\begin{itemize}
-	\item \textbf{Regletas o paneles de salida del Punto de Interconexión}\\
-	\textbf{Opción con Cables de Pares Trenzados}\\
-	HAY QUE AÑADIR METROS DE CABLE\\
-	\textbf{Opción con Cables de Pares}\\
-	HAY QUE AÑADIR METROS DE CABLE
-\end{itemize}
-
-\begin{itemize}
-	\item \textbf{Regletas de los Puntos de Distribución}\\
-	\textbf{Opción con Cables de Pares Trenzados}\\
-	HAY QUE AÑADIR METROS DE CABLE\\
-	\textbf{Opción con Cables de Pares}\\
-	HAY QUE AÑADIR METROS DE CABLE
-\end{itemize}
-
-\begin{itemize}
-	\item \textbf{Conectores}\\
-	\textbf{Opción con Cables de Pares Trenzados}\\
-	HAY QUE AÑADIR METROS DE CABLE\\
-	\textbf{Opción con Cables de Pares}\\
-	HAY QUE AÑADIR METROS DE CABLE
-\end{itemize}
-
-\begin{itemize}
-	\item \textbf{Puntos de Acceso al Usuario (PAU)}\\
-	\textbf{Opción con Cables de Pares Trenzados}\\
-	HAY QUE AÑADIR METROS DE CABLE\\
-	\textbf{Opción con Cables de Pares}\\
-	HAY QUE AÑADIR METROS DE CABLE
-\end{itemize}
 \paragraph{Redes de cables coaxiales.}
 \subparagraph{Establecimiento de la topología de la red de cables coaxiales.}
 \begin{itemize}
@@ -283,7 +193,7 @@ Por tanto la red de distribución-dispersión estará formada por 11 cables coax
 Seguirá una topología en estrella con un número de 11 tomas, 10 para viviendas y una para el local comercial.\\
 Las conectores macho tipo “F” serán los empleados.
 \subparagraph{Resumen de los materiales necesarios para la red de cables coaxiales.}
-Definido en el Apartado Pliego de Condiciones.
+Las características de los todos materiales utilizados se indican en el Pliego de Condiciones.
 \paragraph{Redes de cables de fibra óptica.}
 \subparagraph{Establecimiento de la topología de la red de cables de fibra óptica.}
 \begin{itemize}
@@ -388,19 +298,7 @@ Deberán cumplir las especificaciones indicadas en el Pliego de
 Condiciones.
 \subparagraph{Resumen de los materiales necesarios para la red interior de usuario de cables de pares trenzados.}
 Las características de todos los materiales utilizados se indican en el Pliego de Condiciones.
-\begin{itemize}
-	\item \textbf{Cables}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
-\begin{itemize}
-	\item \textbf{Conectores}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
-\begin{itemize}
-	\item \textbf{BATs}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
-\paragraph{Red de cables coaxiales.}
+
 \subparagraph{Cálculo y dimensionamiento de la red interior de usuario de cables coaxiales.}
 La red interior de usuario se configurará en topología estrella con un cable coaxial del tipo RG 59 desde el
 Registro de Terminación de Red hasta cada una de las dos tomas que se instalarán en cada
@@ -417,15 +315,3 @@ Se instalará un total de 70 tomas en la edificación.
 Se utilizará cable del tipo RG 59 de 6.5 mm de diámetro.
 \subparagraph{Resumen de los materiales necesarios para la red interior de usuario de cables coaxiales.}
 Las características de todos los materiales utilizados se indican en el Pliego de Condiciones.
-\begin{itemize}
-	\item \textbf{Cables}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
-\begin{itemize}
-	\item \textbf{Conectores}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
-\begin{itemize}
-	\item \textbf{BATs}
-	DEFINIR TAMAÑO CABLES
-\end{itemize}
